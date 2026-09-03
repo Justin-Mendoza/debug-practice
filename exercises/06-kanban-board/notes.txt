@@ -1,0 +1,27 @@
+
+
+1. n moves this counter is stuck at 1, only tracks latest move, 
+    activity log? 
+
+
+2. undo not working correctly: can't undo the first move 
+    check acdtivity log? 
+
+
+3. dueDates are rendered incorrectly., wrong due dueDates
+    check at what point the data turns from data to the card. CardTile.tsx
+    duedate is attatched to the cardtile , also check the data file
+
+
+4. 3 cards in-progress bar is the limit, if 4 is there, should show overlimit banner, but instead crashes
+     in progress isn;t handling 4 correclty, or the banner is using an improper variable
+    check console to see if there is a indicationb of why it crashed
+    maybe column.tsx/ ,  could be a data.ts problem, board has islimit
+
+    the error said too many rerenders, which indicated a setx in the app.tsx which is stated in the console log error.
+    if it said max depth reached, it would be a setx and useEffect error. 
+
+
+5. npm typecheck fails, build passes, 
+    exercises/03-kanban-board/src/App.tsx:89
+    status

@@ -1,0 +1,44 @@
+{
+  "name": "debug-practice",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Progressive React/TypeScript debugging exercises \u2014 Notion debugging-round prep",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev:01": "vite --config exercises/01-page-sidebar/vite.config.ts",
+    "dev:02": "vite --config exercises/02-task-inbox/vite.config.ts",
+    "dev:03": "vite --config exercises/03-block-editor/vite.config.ts",
+    "dev:04": "vite --config exercises/04-task-table/vite.config.ts",
+    "dev:05": "vite --config exercises/05-page-tree/vite.config.ts",
+    "dev:06": "vite --config exercises/06-kanban-board/vite.config.ts",
+    "build:01": "vite build --config exercises/01-page-sidebar/vite.config.ts",
+    "build:02": "vite build --config exercises/02-task-inbox/vite.config.ts",
+    "build:03": "vite build --config exercises/03-block-editor/vite.config.ts",
+    "build:04": "vite build --config exercises/04-task-table/vite.config.ts",
+    "build:05": "vite build --config exercises/05-page-tree/vite.config.ts",
+    "build:06": "vite build --config exercises/06-kanban-board/vite.config.ts",
+    "typecheck:01": "tsc --noEmit -p exercises/01-page-sidebar/tsconfig.json",
+    "typecheck:02": "tsc --noEmit -p exercises/02-task-inbox/tsconfig.json",
+    "typecheck:03": "tsc --noEmit -p exercises/03-block-editor/tsconfig.json",
+    "typecheck:04": "tsc --noEmit -p exercises/04-task-table/tsconfig.json",
+    "typecheck:05": "tsc --noEmit -p exercises/05-page-tree/tsconfig.json",
+    "typecheck:06": "tsc --noEmit -p exercises/06-kanban-board/tsconfig.json",
+    "typecheck": "npm run typecheck:01 && npm run typecheck:02 && npm run typecheck:03 && npm run typecheck:04 && npm run typecheck:05 && npm run typecheck:06"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.23.12",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
